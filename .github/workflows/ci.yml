@@ -35,7 +35,7 @@ jobs:
 
       - name: Run tests with pytest
         env:
-          PYTHONPATH: ${{ github.workspace }}/last_proj
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           source venv/bin/activate
           echo $PYTHONPATH 
