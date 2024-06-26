@@ -10,7 +10,6 @@ import os
 from ml.data import process_data
 from ml.model import train_model
 
-import pdb
 
 ml_dir = os.getcwd()
 TRAINED_MODEL_PATH = os.path.join(ml_dir, "trained_model.pkl")

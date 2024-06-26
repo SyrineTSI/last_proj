@@ -5,8 +5,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from data import process_data
 
-import pdb
-
 
 def evaluate_model_slices(model_path, encoder_path, lb_path, test_data_path, categorical_features):
     # Load the trained model
