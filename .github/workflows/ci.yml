@@ -38,5 +38,7 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}/last_proj
         run: |
           source venv/bin/activate
-          pip freeze
+          echo $PYTHONPATH 
+          echo $PATH
+          pwd
           pytest tests/test_api.py
