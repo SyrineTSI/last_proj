@@ -11,7 +11,8 @@ from ml.data import process_data
 from ml.model import train_model
 
 
-ml_dir = os.getcwd()
+#ml_dir = '/home/runner/work/last_proj/last_proj/starter/'
+ml_dir = os.path.dirname(os.path.abspath(__file__))
 TRAINED_MODEL_PATH = os.path.join(ml_dir, "trained_model.pkl")
 ENCODER_PATH = os.path.join(ml_dir, "encoder.pkl")
 LB_PATH = os.path.join(ml_dir, "label_binarizer.pkl")
