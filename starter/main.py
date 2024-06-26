@@ -6,12 +6,13 @@ from pathlib import Path
 import pandas as pd
 import joblib
 import uvicorn
+import os
 import numpy as np
 
 # Initialize FastAPI
 app = FastAPI()
 
-base_dir = Path('/Users/A200226491/Desktop/Learning/last_proj/starter/starter')
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the trained model and encoders
 TRAINED_MODEL_PATH = base_dir / 'trained_model.pkl'
