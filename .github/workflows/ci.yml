@@ -36,4 +36,4 @@ jobs:
       - name: Run tests with pytest
         run: |
           source venv/bin/activate
-          pytest test_api.py
+          pytest tests/test_api.py
