@@ -34,8 +34,6 @@ jobs:
           flake8 . 
 
       - name: Run tests with pytest
-        env:
-          PYTHONPATH: ${{ github.workspace }}
         run: |
           source venv/bin/activate
           pytest tests/test_api.py
