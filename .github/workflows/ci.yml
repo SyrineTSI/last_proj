@@ -35,7 +35,7 @@ jobs:
 
       - name: Run tests with pytest
         env:
-          PYTHONPATH: ${{ github.workspace }}/starter
+          PYTHONPATH: ${{ github.workspace }}/last_proj
         run: |
           source venv/bin/activate
           pytest tests/test_api.py
