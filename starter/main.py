@@ -15,9 +15,9 @@ app = FastAPI()
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the trained model and encoders
-TRAINED_MODEL_PATH = base_dir / 'trained_model.pkl'
-encoder_path = base_dir / 'encoder.pkl'
-lb_path = base_dir / 'label_binarizer.pkl'
+TRAINED_MODEL_PATH = os.path.join(base_dir, 'trained_model.pkl')
+encoder_path = os.path.join(base_dir, 'encoder.pkl')
+lb_path = os.path.join(base_dir, 'label_binarizer.pkl')
 model = joblib.load(TRAINED_MODEL_PATH)
 encoder = joblib.load(encoder_path)
 lb = joblib.load(lb_path)
